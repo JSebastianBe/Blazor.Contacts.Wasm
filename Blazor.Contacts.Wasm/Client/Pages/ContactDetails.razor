@@ -1,0 +1,83 @@
+﻿@page "/contactdetails"
+@page "/contactdetails/{id:int}"
+
+@inject IContactService ContactService
+@inject NavigationManager NavigationManager
+
+@if(contact == null){
+<p><em>Cargando...</em></p>
+}else{
+    <RadzenTemplateForm Model="contact" TItem="Contact" OnValidSubmit="Save">
+        <div class="card">
+            <h5 class="card-header">Detalle de contacto</h5>
+            <div class="card-body">
+                <div class="container">
+                    <RadzenFieldset Legend="Detalles de contacto">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="First Name">First Name</label>
+                                <RadzenTextBox class="form-control" @bind-Value="@contact.FirstName"></RadzenTextBox>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="Last Name">Last Name</label>
+                                <RadzenTextBox class="form-control" @bind-Value="@contact.LastName"></RadzenTextBox>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 mb-3">
+                                <label for="Phone">Phone</label>
+                                <RadzenTextBox class="form-control" @bind-Value="@contact.Phone"></RadzenTextBox>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 mb-3">
+                                <label for="Address">Address</label>
+                                <RadzenTextArea class="form-control" @bind-Value="@contact.Address"></RadzenTextArea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <RadzenButton text="Guardar" ButtonStyle="ButtonStyle.Primary" Click="@(arg => Save())" />
+                                <RadzenButton text="Cancelar" ButtonStyle="ButtonStyle.Secondary" Click="@(arg => NavigateHome())" />
+                            </div>
+                            <div class="col-md-4 mb-3">
+                            </div>
+                        </div>
+                    </RadzenFieldset>
+                </div>
+            </div>
+        </div>
+    </RadzenTemplateForm>
+}
+
+
+
+@code {
+    public Contact contact;
+    [Parameter]
+    public int Id { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (Id > 0)
+        {
+            contact = await ContactService.GetDetails(Id);
+        }
+        else
+        {
+            contact = new Contact();
+        }
+    }
+
+    protected async Task Save(){
+        Console.WriteLine("Guardando contacto...");
+        await ContactService.SaveContact(contact);
+        NavigateHome();
+    }
+
+    private void NavigateHome(){
+        NavigationManager.NavigateTo("/");
+    }
+}

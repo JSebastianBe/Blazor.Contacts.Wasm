@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "7uvp95Kg/6k=",
+  "success": true,
+  "projectFilePath": "/Users/jusebema/Documents/RepositoriosGit/Curso Blazor/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Repositories/Blazor.Contacts.Wasm.Repositories.csproj",
+  "expectedPackageFiles": [
+    "/Users/jusebema/.nuget/packages/dapper/2.1.66/dapper.2.1.66.nupkg.sha512"
+  ],
+  "logs": []
+}

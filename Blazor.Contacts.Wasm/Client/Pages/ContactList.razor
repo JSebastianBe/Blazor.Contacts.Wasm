@@ -1,0 +1,55 @@
+﻿@page "/"
+
+@inject IContactService ContactService
+@inject NavigationManager NavigationManager
+
+<h3>Contactos</h3>
+<table class="table">
+    <tbody>
+        <tr>
+            <td colspan="2"><a href="/contactdetails">Nuevo contacto</a></td>
+        </tr>
+    </tbody>
+</table>
+@if (contacts == null)
+{
+    <p><em>Cargando...</em></p>
+}
+else
+{
+    <RadzenDataGrid AllowFiltering="true" FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive" 
+                    FilterMode="FilterMode.Advanced" AllowSorting="true" AllowPaging="true" PageSize="5" Data="@contacts" Count="@contacts.Count()" TItem="Contact" ColumnWidth="200px">
+        <Columns>
+            <RadzenDataGridColumn TItem="Contact" Property="FullName" Title="Nombre" />
+            <RadzenDataGridColumn TItem="Contact" Property="Phone" Title="Teléfono" />
+            <RadzenDataGridColumn TItem="Contact" Property="Address" Title="Dirección" />
+            <RadzenDataGridColumn TItem="Contact" Title="Editar" >
+                <Template Context="data">
+                    <RadzenLink Path="@($"/contactdetails/" + data.Id)" Text="Editar" />
+                </Template>
+            </RadzenDataGridColumn>
+            <RadzenDataGridColumn TItem="Contact" Title="Eliminar" >
+                <Template Context="data">
+                    <RadzenLink Path="@($"/contactdelete/" + data.Id)" Text="Eliminar" />
+                </Template>
+            </RadzenDataGridColumn>
+        </Columns>
+    </RadzenDataGrid>
+}
+@Message
+
+@code {
+    IEnumerable<Contact> contacts;
+    public string Message { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            contacts = await ContactService.GetAll();
+        }
+        catch (Exception ex)
+        {
+            Message = $"Error: {ex.Message}";
+        }
+    }
+}

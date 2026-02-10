@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Blazor.Contacts.Wasm", "Blazor.Contacts.Wasm", "{C62DB3E8-A76F-4E13-AC87-D947C6C50ADD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor.Contacts.Wasm.Server", "Blazor.Contacts.Wasm\Server\Blazor.Contacts.Wasm.Server.csproj", "{72A58AA7-F790-4873-A8DB-46D66DC1D9B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor.Contacts.Wasm.Client", "Blazor.Contacts.Wasm\Client\Blazor.Contacts.Wasm.Client.csproj", "{D8770440-CDA6-484C-A2B4-93DA48C5DEB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor.Contacts.Wasm.Shared", "Blazor.Contacts.Wasm\Shared\Blazor.Contacts.Wasm.Shared.csproj", "{0122337B-F394-4BB6-8EA1-F6618C3E5B89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor.Contacts.Wasm.Repositories", "Blazor.Contacts.Wasm\Blazor.Contacts.Wasm.Repositories\Blazor.Contacts.Wasm.Repositories.csproj", "{B1570866-1EDE-4F69-AA09-5C355AD006E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72A58AA7-F790-4873-A8DB-46D66DC1D9B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72A58AA7-F790-4873-A8DB-46D66DC1D9B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72A58AA7-F790-4873-A8DB-46D66DC1D9B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72A58AA7-F790-4873-A8DB-46D66DC1D9B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8770440-CDA6-484C-A2B4-93DA48C5DEB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8770440-CDA6-484C-A2B4-93DA48C5DEB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8770440-CDA6-484C-A2B4-93DA48C5DEB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8770440-CDA6-484C-A2B4-93DA48C5DEB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0122337B-F394-4BB6-8EA1-F6618C3E5B89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0122337B-F394-4BB6-8EA1-F6618C3E5B89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0122337B-F394-4BB6-8EA1-F6618C3E5B89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0122337B-F394-4BB6-8EA1-F6618C3E5B89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1570866-1EDE-4F69-AA09-5C355AD006E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1570866-1EDE-4F69-AA09-5C355AD006E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1570866-1EDE-4F69-AA09-5C355AD006E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1570866-1EDE-4F69-AA09-5C355AD006E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{72A58AA7-F790-4873-A8DB-46D66DC1D9B7} = {C62DB3E8-A76F-4E13-AC87-D947C6C50ADD}
+		{D8770440-CDA6-484C-A2B4-93DA48C5DEB8} = {C62DB3E8-A76F-4E13-AC87-D947C6C50ADD}
+		{0122337B-F394-4BB6-8EA1-F6618C3E5B89} = {C62DB3E8-A76F-4E13-AC87-D947C6C50ADD}
+		{B1570866-1EDE-4F69-AA09-5C355AD006E5} = {C62DB3E8-A76F-4E13-AC87-D947C6C50ADD}
+	EndGlobalSection
+EndGlobal

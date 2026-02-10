@@ -1,0 +1,19 @@
+CREATE DATABASE ContactsDB;
+
+USE ContactsDB;
+
+/*
+CREATE TABLE [dbo].[Contacts]
+(
+    Id          INT IDENTITY PRIMARY KEY,
+    FirstName   NVARCHAR(50) NOT NULL,
+    LastName    NVARCHAR(50) NOT NULL,
+    Phone       NVARCHAR(50) NULL,
+    Address     NVARCHAR(250) NULL
+
+);
+*/
+
+
+SELECT  *
+FROM    [dbo].[Contacts]

@@ -1,0 +1,55 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = Blazor.Contacts.Wasm.Client
+build_property.RootNamespace = Blazor.Contacts.Wasm.Client
+build_property.ProjectDir = /Users/jusebema/Documents/RepositoriosGit/Curso Blazor/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm/Client/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/jusebema/Documents/RepositoriosGit/Curso Blazor/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm/Client
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/jusebema/Documents/RepositoriosGit/Curso Blazor/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm/Client/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jusebema/Documents/RepositoriosGit/Curso Blazor/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm/Client/Pages/ContactDelete.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29udGFjdERlbGV0ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jusebema/Documents/RepositoriosGit/Curso Blazor/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm/Client/Pages/ContactDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29udGFjdERldGFpbHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jusebema/Documents/RepositoriosGit/Curso Blazor/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm/Client/Pages/ContactList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29udGFjdExpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jusebema/Documents/RepositoriosGit/Curso Blazor/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm/Client/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jusebema/Documents/RepositoriosGit/Curso Blazor/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm/Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jusebema/Documents/RepositoriosGit/Curso Blazor/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm/Client/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-4kcodaszeb
+
+[/Users/jusebema/Documents/RepositoriosGit/Curso Blazor/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm/Client/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L05hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-6rcsmgw108

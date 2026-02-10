@@ -1,0 +1,133 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "Dapper/2.1.66": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Dapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Dapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Blazor.Contacts.Wasm.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Blazor.Contacts.Wasm.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blazor.Contacts.Wasm.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Dapper/2.1.66": {
+      "sha512": "/q77jUgDOS+bzkmk3Vy9SiWMaetTw+NOoPAV0xPBsGVAyljd5S6P+4RUW7R3ZUGGr9lDRyPKgAMj2UAOwvqZYw==",
+      "type": "package",
+      "path": "dapper/2.1.66",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Dapper.png",
+        "dapper.2.1.66.nupkg.sha512",
+        "dapper.nuspec",
+        "lib/net461/Dapper.dll",
+        "lib/net461/Dapper.xml",
+        "lib/net8.0/Dapper.dll",
+        "lib/net8.0/Dapper.xml",
+        "lib/netstandard2.0/Dapper.dll",
+        "lib/netstandard2.0/Dapper.xml",
+        "readme.md"
+      ]
+    },
+    "Blazor.Contacts.Wasm.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Shared/Blazor.Contacts.Wasm.Shared.csproj",
+      "msbuildProject": "../Shared/Blazor.Contacts.Wasm.Shared.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Blazor.Contacts.Wasm.Shared >= 1.0.0",
+      "Dapper >= 2.1.66"
+    ]
+  },
+  "packageFolders": {
+    "/Users/jusebema/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/jusebema/Documents/RepositoriosGit/Curso Blazor/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Repositories/Blazor.Contacts.Wasm.Repositories.csproj",
+      "projectName": "Blazor.Contacts.Wasm.Repositories",
+      "projectPath": "/Users/jusebema/Documents/RepositoriosGit/Curso Blazor/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Repositories/Blazor.Contacts.Wasm.Repositories.csproj",
+      "packagesPath": "/Users/jusebema/.nuget/packages/",
+      "outputPath": "/Users/jusebema/Documents/RepositoriosGit/Curso Blazor/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Repositories/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/jusebema/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "/Users/jusebema/Documents/RepositoriosGit/Curso Blazor/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm/Shared/Blazor.Contacts.Wasm.Shared.csproj": {
+              "projectPath": "/Users/jusebema/Documents/RepositoriosGit/Curso Blazor/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm/Shared/Blazor.Contacts.Wasm.Shared.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "dependencies": {
+          "Dapper": {
+            "target": "Package",
+            "version": "[2.1.66, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
