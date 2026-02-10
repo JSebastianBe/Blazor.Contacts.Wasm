@@ -43,3 +43,7 @@ Blazor.Contacts.Wasm/
 ├── wwwroot/
 └── Program.cs
 ```
+
+## Base de Datos
+- **SQL Server** - Motor de base de datos relacional
+
